@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "./scss/publicHomePage.scss";
+import "../../Routes/Public Components/scss/publicHomePage.scss";  
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTruck, faAward, faPersonWalkingArrowLoopLeft,
      faBell, faThumbsUp, faStar, faCartShopping, faMagnifyingGlass, faUser,
@@ -15,7 +15,7 @@ import Footer from "./modal/footer";
 import LoginModal from "./modal/login";
 
 
-const PublicHomePage = () => {
+const ClientNav = () => {
     const [lastScrollY, setLastScrollY] = useState(0);
     const [hideHeader, setHideHeader] = useState(false);
     const [loginModalup, setloginModal] = useState(false);
@@ -129,67 +129,7 @@ const PublicHomePage = () => {
             </div>           
             <div className="content">
                 
-                <div className="noice d-flex align-items-center">
-                    <FontAwesomeIcon icon={faBell}  color="#ADFFA2" className="bell col-1" />
-                    <p className="noicecontent">
-                    Temu is working with the Vietnam E-commerce and Digital Economy Agency and the Ministry of Industry and Trade to register its provision of e-commerce services in Vietnam.
-                    </p>
-                </div>
-                
-                <div className="banner">
-                    <img className="banner_img" src={banner} alt="Banner" />
-                </div>
-
-                <div className="product-contents">
-                    <div className="banner_2">
-                        <img className="banner_2_img" src = {banner2} alt="banner_2"/>
-                    </div>
-                    <div className="best-salers d-flex flex-wrap justify-content-between">
-                        <div className="card" style={{ width: "18rem" }}>
-                            <img src={logo} className="card-img-top" alt="..." />
-                                <div className="card-body">
-                                    <h5 className="card-title">5.24$</h5>
-                                    <p>
-                                    250 sold out
-                                    </p>
-                                </div>
-                        </div>
-                        <div className="card" style={{ width: "18rem" }}>
-                            <img src={logo} className="card-img-top" alt="..." />
-                                <div className="card-body">
-                                    <h5 className="card-title">5.24$</h5>
-                                    <p>
-                                    250 sold out
-                                    </p>
-                                    
-                                </div>
-                        </div>
-                        <div className="card" style={{ width: "18rem" }}>
-                            <img src={logo} className="card-img-top" alt="..." />
-                                <div className="card-body">
-                                    <h5 className="card-title">5.24$</h5>
-                                    <p>
-                                    250 sold out
-                                    </p>
-                                    
-                                </div>
-                        </div>
-                        <div className="card" style={{ width: "18rem" }}>
-                            <img src={logo} className="card-img-top" alt="..." />
-                                <div className="card-body">
-                                    <h5 className="card-title">5.24$</h5>
-                                    <p>
-                                    250 sold out
-                                    </p>
-                                    
-                                </div>
-                        </div>
-                        <div className="showmore ">
-                        <p>More </p>
-                        </div>
-                    </div>
-                    
-                </div>
+               
                 <footer>
                     <Footer/>
                 </footer>
@@ -199,4 +139,4 @@ const PublicHomePage = () => {
     );
 };
 
-export default PublicHomePage;
+export default ClientNav;
